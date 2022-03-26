@@ -59,7 +59,7 @@ import brandDark from "assets/images/logo-ct-dark.png";
 
 
 import styled from "styled-components";
-import CustomChart from "./components/CustomChart"
+import CustomLineChart from "./components/CustomLineChart";
 import CustomNavbar from "components/CustomNavbar";
 
 
@@ -216,15 +216,15 @@ export default function App() {
 
         {/* <LeftSide> */}
         <Middle>
-          <CustomChart />
+          <CustomLineChart />
         </Middle>
           
         {/* </LeftSide> */}
         {/* <RightSide> */}
-          <CustomChart />
+          <CustomLineChart />
         {/* </RightSide> */}
 
-        <CustomChart /><CustomChart /><CustomChart /><CustomChart />
+        <CustomLineChart /><CustomLineChart /><CustomLineChart /><CustomLineChart />
         
       </GridTemplateArea>
       

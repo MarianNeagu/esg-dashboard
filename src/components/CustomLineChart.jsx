@@ -6,7 +6,7 @@ const Wrapper = styled.div`
   
 `
 
-class CustomChart extends Component{
+class CustomLineChart extends Component{
    
   render() { 
     return (
@@ -42,5 +42,5 @@ class CustomChart extends Component{
   }
 }
  
-export default CustomChart;
+export default CustomLineChart;
 
