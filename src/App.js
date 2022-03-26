@@ -58,6 +58,38 @@ import brandDark from "assets/images/logo-ct-dark.png";
 // OUR IMPORTS!!!!!!!!!
 
 import CustomChart from "./components/CustomChart"
+import styled from "styled-components";
+
+
+
+const GridTemplateArea = styled.div `
+    display: grid;
+    grid-template-areas: 
+            "header header"
+            "main main"
+            "left-side right-side"
+            "footer footer"
+            ;
+
+    grid-template-columns: 50% 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 20px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+`
+
+const LeftSide = styled.div`
+  display: grid;  
+  grid-area: left-side;
+`
+const RightSide = styled.div`
+  display: grid;
+  grid-area: right-side;
+`
+
+
+
 
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
@@ -161,15 +193,24 @@ export default function App() {
     </CacheProvider>
   ) : (
     <ThemeProvider theme={darkMode ? themeDark : theme}>
-
       <CssBaseline />
+      
+      <GridTemplateArea>
 
-      <div style={{background: "red"}}>ceva acilea</div>
+        {/* <div style={{background: "red"}}>ceva acilea</div> */}
+        {/* <MDAlert>This is an alert!</MDAlert> */}
 
-
-      <MDAlert>This is an alert!</MDAlert>
-
-      <CustomChart />
+        <LeftSide>
+          <CustomChart />
+        </LeftSide>
+          
+        
+        <RightSide>
+          <CustomChart />
+        </RightSide>
+        
+      </GridTemplateArea>
+      
 
     </ThemeProvider>
   );

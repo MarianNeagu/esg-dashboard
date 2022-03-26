@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-
+import styled from 'styled-components';
 import DefaultLineChart from "examples/Charts/LineCharts/DefaultLineChart"
 
+const Wrapper = styled.div`
+  
+`
+
 class CustomChart extends Component{
-  state = {  } 
+   
   render() { 
     return (
+      <>
       <DefaultLineChart
         icon={{ color: "info", component: "leaderboard" }}
         title="Default Line Chart"
@@ -30,7 +35,9 @@ class CustomChart extends Component{
             },
           ],
         }}
-      />
+        />
+        
+      </>
     );
   }
 }
