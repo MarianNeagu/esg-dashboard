@@ -54,6 +54,11 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
 
+
+// OUR IMPORTS!!!!!!!!!
+
+import CustomChart from "./components/CustomChart"
+
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
   const {
@@ -156,8 +161,16 @@ export default function App() {
     </CacheProvider>
   ) : (
     <ThemeProvider theme={darkMode ? themeDark : theme}>
+
       <CssBaseline />
+
+      <div style={{background: "red"}}>ceva acilea</div>
+
+
       <MDAlert>This is an alert!</MDAlert>
+
+      <CustomChart />
+
     </ThemeProvider>
   );
 }
