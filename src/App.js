@@ -57,16 +57,17 @@ import brandDark from "assets/images/logo-ct-dark.png";
 
 // OUR IMPORTS!!!!!!!!!
 
-import CustomChart from "./components/CustomChart"
-import styled from "styled-components";
 
+import styled from "styled-components";
+import CustomChart from "./components/CustomChart"
+import CustomNavbar from "components/CustomNavbar";
 
 
 const GridTemplateArea = styled.div `
     display: grid;
     grid-template-areas: 
             "header header"
-            "main main"
+            "middle middle"
             "left-side right-side"
             "footer footer"
             ;
@@ -77,6 +78,16 @@ const GridTemplateArea = styled.div `
     gap: 20px;
     /* margin-left: 20px;
     margin-right: 20px; */
+`
+
+const Middle = styled.div`
+  display: grid;  
+  grid-area: middle;
+`
+
+const Header = styled.div`
+  display: grid;  
+  grid-area: header;
 `
 
 const LeftSide = styled.div`
@@ -197,17 +208,23 @@ export default function App() {
       
       <GridTemplateArea>
 
-        {/* <div style={{background: "red"}}>ceva acilea</div> */}
-        {/* <MDAlert>This is an alert!</MDAlert> */}
-
-        <LeftSide>
-          <CustomChart />
-        </LeftSide>
-          
+        <Header>
+          <CustomNavbar />
+        </Header>
         
-        <RightSide>
+        
+
+        {/* <LeftSide> */}
+        <Middle>
           <CustomChart />
-        </RightSide>
+        </Middle>
+          
+        {/* </LeftSide> */}
+        {/* <RightSide> */}
+          <CustomChart />
+        {/* </RightSide> */}
+
+        <CustomChart /><CustomChart /><CustomChart /><CustomChart />
         
       </GridTemplateArea>
       
