@@ -61,24 +61,37 @@ import brandDark from "assets/images/logo-ct-dark.png";
 import styled from "styled-components";
 import CustomLineChart from "./components/CustomLineChart";
 import CustomNavbar from "components/CustomNavbar";
+import CustomBarChart from "components/CustomBarChart";
+import CustomInfoCard from "components/CustomInfoCard";
+import esg_data from "Data/esg_data";
+import PredictionLineChart from "components/PredictionLineChart";
 
 
 const GridTemplateArea = styled.div `
     display: grid;
     grid-template-areas: 
-            "header header"
-            "middle middle"
-            "left-side right-side"
-            "footer footer"
+            "header header header"
+            "left-side middle right-side"
+            "left-side-middle left-side-middle right-side-middle"
+            "footer footer footer"
             ;
 
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-left: 20px;
     margin-right: 20px;
     gap: 20px;
     /* margin-left: 20px;
     margin-right: 20px; */
 `
+const LeftSide = styled.div`
+  display: grid;  
+  grid-area: left-side;
+`
+const RightSide = styled.div`
+  display: grid;  
+  grid-area: right-side;
+`
+
 
 const Middle = styled.div`
   display: grid;  
@@ -90,13 +103,13 @@ const Header = styled.div`
   grid-area: header;
 `
 
-const LeftSide = styled.div`
+const LeftSideMiddle = styled.div`
   display: grid;  
-  grid-area: left-side;
+  grid-area: left-side-middle;
 `
-const RightSide = styled.div`
+const RightSideMiddle = styled.div`
   display: grid;
-  grid-area: right-side;
+  grid-area: right-side-middle;
 `
 
 
@@ -195,6 +208,16 @@ export default function App() {
     </MDBox>
   );
 
+  const [viewType, setViewType] = useState({
+    industry: "Automotive",
+    company: "BMW",
+    view: "analytics"
+  })
+
+  const viewTypeHandler = (industry = "Automotive",company = "BMW",view="analytics")=>{
+    setViewType({industry: industry, company: company, view:view})
+  }
+
   return direction === "rtl" ? (
     <CacheProvider value={rtlCache}>
       <ThemeProvider theme={darkMode ? themeDarkRTL : themeRTL}>
@@ -206,27 +229,52 @@ export default function App() {
     <ThemeProvider theme={darkMode ? themeDark : theme}>
       <CssBaseline />
       
-      <GridTemplateArea>
 
-        <Header>
-          <CustomNavbar />
-        </Header>
         
-        
+        {viewType.view=="analytics" ? 
+          <GridTemplateArea>
 
-        {/* <LeftSide> */}
-        <Middle>
-          <CustomLineChart />
-        </Middle>
+            <Header>
+            <CustomNavbar viewTypeHandler = {viewTypeHandler} viewType = {viewType} JsonData={esg_data}/>
+            </Header>
+    
+            <LeftSide>
+              <CustomInfoCard letter="E" JsonData = {esg_data} viewType={viewType}/>
+            </LeftSide>
+
+            
+            <Middle>
+              <CustomInfoCard letter="S" JsonData = {esg_data} viewType={viewType}/>
+            </Middle>
+    
+            <RightSide>
+              <CustomInfoCard letter="G" JsonData = {esg_data} viewType={viewType}/>
+            </RightSide>
+            
           
-        {/* </LeftSide> */}
-        {/* <RightSide> */}
-          <CustomLineChart />
-        {/* </RightSide> */}
-
-        <CustomLineChart /><CustomLineChart /><CustomLineChart /><CustomLineChart />
-        
-      </GridTemplateArea>
+            <LeftSideMiddle>
+              <CustomLineChart company={viewType.company}/>
+            </LeftSideMiddle>
+    
+            <RightSideMiddle>
+              <CustomBarChart JsonData = {esg_data} viewType={viewType}/>
+            </RightSideMiddle>
+          </GridTemplateArea>
+          :
+          
+            <GridTemplateArea>
+            <Header>
+            <CustomNavbar viewTypeHandler = {viewTypeHandler} viewType = {viewType} JsonData={esg_data}/>
+            </Header>
+            <LeftSideMiddle>
+            <PredictionLineChart JsonData = {esg_data} viewType={viewType}/>
+          </LeftSideMiddle>
+  
+          <RightSideMiddle>
+            
+          </RightSideMiddle>
+          </GridTemplateArea>
+          }
       
 
     </ThemeProvider>

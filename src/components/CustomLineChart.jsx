@@ -1,37 +1,90 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import DefaultLineChart from "examples/Charts/LineCharts/DefaultLineChart"
+import esg_data from "../Data/esg_data"
 
-const Wrapper = styled.div`
-  
-`
 
-class CustomLineChart extends Component{
+
+
+// function dataExtract (esgData, companyName) {
+//   for(i=0; i < esgData)
+// }
+
+
+export default function CustomLineChart({company}) {
    
-  render() { 
+  const extractEnvironmentScore = (jsonData, companyName) => {
+    let dataExtract = []
+  
+    for(let i = 0; i < jsonData.Industries.length; i++)
+    {
+      
+      for(let j = 0; j < jsonData.Industries[i].companies.length; j++) // pentru fiecare industrie
+        for(let k = jsonData.Industries[i].companies[j].data.length - 1; k >= 0; k--)
+          if(jsonData.Industries[i].companies[j].name === companyName)
+            {
+              dataExtract.push(jsonData.Industries[i].companies[j].data[k].environment_score);
+              
+            }
+    }
+    // console.log(dataExtract);
+    return dataExtract;
+    
+  };
+  const extractSocialScore = (jsonData, companyName) => {
+    let dataExtract = []
+  
+    for(let i = 0; i < jsonData.Industries.length; i++)
+    {
+      
+      for(let j = 0; j < jsonData.Industries[i].companies.length; j++) // pentru fiecare industrie
+        for(let k = jsonData.Industries[i].companies[j].data.length - 1; k >= 0; k--)
+          if(jsonData.Industries[i].companies[j].name === companyName)
+            dataExtract.push(jsonData.Industries[i].companies[j].data[k].social_score);
+  
+    }
+    return dataExtract;
+  };
+  const extractGovernanceScore = (jsonData, companyName) => {
+    let dataExtract = []
+  
+    for(let i = 0; i < jsonData.Industries.length; i++)
+    {
+      
+      for(let j = 0; j < jsonData.Industries[i].companies.length; j++) // pentru fiecare industrie
+        for(let k = jsonData.Industries[i].companies[j].data.length - 1; k >= 0; k--)
+          if(jsonData.Industries[i].companies[j].name === companyName)
+            dataExtract.push(jsonData.Industries[i].companies[j].data[k].governance_score);
+  
+    }
+    return dataExtract;
+  };
+
+    // console.log(dataExtract(esg_data, "BMW"));
     return (
+      
       <>
       <DefaultLineChart
         icon={{ color: "info", component: "leaderboard" }}
-        title="Default Line Chart"
-        description="Product insights"
+        title="History of ESG"
+        description="Insights are done quarterly"
         chart={{
-          labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          labels: ["Q1 2019", "Q2 2019", "Q3 2019", "Q4 2019", "Q1 2020", "Q2 2020", "Q3 2020", "Q4 2020", "Q1 2021","Q2 2021","Q3 2021","Q4 2021"],
           datasets: [
             {
-              label: "Organic Search",
+              label: "Environment",
               color: "info",
-              data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+              data: extractEnvironmentScore(esg_data, company),
             },
             {
-              label: "Referral",
-              color: "dark",
-              data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
-            },
-            {
-              label: "Direct",
+              label: "Social",
               color: "primary",
-              data: [40, 80, 70, 90, 30, 90, 140, 130, 200],
+              data: extractSocialScore(esg_data,company),
+            },
+            {
+              label: "Governance",
+              color: "dark",
+              data: extractGovernanceScore(esg_data,company),
             },
           ],
         }}
@@ -39,8 +92,5 @@ class CustomLineChart extends Component{
         
       </>
     );
-  }
 }
- 
-export default CustomLineChart;
 
