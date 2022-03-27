@@ -276,7 +276,7 @@
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "15-03-2022",
                             "environment_score": 52,
-                            "social_score": 18,
+                            "social_score": 38,
                             "governance_score": 25,
                             "total": 95
                         },
@@ -297,7 +297,7 @@
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "15-03-2022",
                             "environment_score": 52,
-                            "social_score": 18,
+                            "social_score": 34,
                             "governance_score": 25,
                             "total": 95
                         }, {
@@ -316,8 +316,8 @@
                             "total_level": "Medium",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "15-03-2022",
-                            "environment_score": 52,
-                            "social_score": 18,
+                            "environment_score": 50,
+                            "social_score": 36,
                             "governance_score": 25,
                             "total": 95
                         }, {
@@ -337,7 +337,7 @@
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "15-03-2022",
                             "environment_score": 52,
-                            "social_score": 18,
+                            "social_score": 34,
                             "governance_score": 25,
                             "total": 95
                         }, {
@@ -357,7 +357,7 @@
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "15-03-2022",
                             "environment_score": 52,
-                            "social_score": 18,
+                            "social_score": 32,
                             "governance_score": 25,
                             "total": 95
                         }, {
@@ -377,8 +377,8 @@
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "15-03-2022",
                             "environment_score": 52,
-                            "social_score": 18,
-                            "governance_score": 25,
+                            "social_score": 30,
+                            "governance_score": 27,
                             "total": 95
                         }, {
                             "date": "q2-2021",
@@ -396,8 +396,8 @@
                             "total_level": "Medium",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "15-03-2022",
-                            "environment_score": 52,
-                            "social_score": 18,
+                            "environment_score": 49,
+                            "social_score": 19,
                             "governance_score": 25,
                             "total": 95
                         }, {
@@ -524,9 +524,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 25,
+                            "social_score": 20,
+                            "governance_score": 34,
                             "total": 0
                         },
                         {
@@ -545,9 +545,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 20,
+                            "social_score": 15,
+                            "governance_score": 30,
                             "total": 0
                         },
                         {
@@ -566,9 +566,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 34,
+                            "social_score": 12,
+                            "governance_score": 24,
                             "total": 0
                         },
                         {
@@ -587,9 +587,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 32,
+                            "social_score": 10 ,
+                            "governance_score": 26,
                             "total": 0
                         },
                         {
@@ -608,9 +608,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 30,
+                            "social_score": 25,
+                            "governance_score": 28,
                             "total": 0
                         },
                         {
@@ -629,9 +629,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 26,
+                            "social_score": 30,
+                            "governance_score": 23,
                             "total": 0
                         },
                         {
@@ -650,9 +650,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 23,
+                            "social_score": 18,
+                            "governance_score": 19,
                             "total": 0
                         },
                         {
@@ -671,9 +671,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 30,
+                            "social_score": 32,
+                            "governance_score": 15,
                             "total": 0
                         },
                         {
@@ -692,9 +692,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 27,
+                            "social_score": 30,
+                            "governance_score": 14,
                             "total": 0
                         },
                         {
@@ -713,9 +713,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 19,
+                            "social_score": 36,
+                            "governance_score": 10,
                             "total": 0
                         },
                         {
@@ -734,9 +734,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 10,
+                            "social_score": 34,
+                            "governance_score": 25,
                             "total": 0
                         },
                         {
@@ -755,9 +755,9 @@
                             "total_level": "Low",
                             "disclaimer": "ESG Enterprise's ESG Rating data (\"Scores\") are all based on public information and provided for informational purposes only. No member of ESG Enterprise or related parties make any prediction, warranty or representation whatsoever, expressly or impliedly, either as to the suitability of our Scores for any particular purposes or the validity of any derivative analysis or conclusion based on the Scores.",
                             "last_processing_date": "02-10-2021",
-                            "environment_score": 0,
-                            "social_score": 0,
-                            "governance_score": 0,
+                            "environment_score": 13,
+                            "social_score": 40,
+                            "governance_score": 22,
                             "total": 0
                         }
 
@@ -859,71 +859,71 @@
                 "data": [{
                     "date": "q4-2022",
                     "esg_id": 758914,
-                    "environment_score": 27,
-                    "social_score": 25,
-                    "governance_score": 36,
+                    "environment_score": 29,
+                    "social_score": 27,
+                    "governance_score": 28,
                     "total": 88
                 }, {
                     "date": "q3-2022",
                     "esg_id": 185878,
                     "environment_score": 27,
                     "social_score": 25,
-                    "governance_score": 36,
+                    "governance_score": 25,
                     "total": 88
                 }, {
                     "date": "q2-2022",
                     "esg_id": 726093,
                     "environment_score": 27,
                     "social_score": 25,
-                    "governance_score": 36,
+                    "governance_score": 27,
                     "total": 88
                 }, {
                     "date": "q1-2022",
                     "esg_id": 773898,
-                    "environment_score": 27,
-                    "social_score": 25,
-                    "governance_score": 36,
+                    "environment_score": 22,
+                    "social_score": 30,
+                    "governance_score": 30,
                     "total": 88
                 }, {
                     "date": "q4-2021",
                     "esg_id": 939641,
                     "environment_score": 27,
                     "social_score": 25,
-                    "governance_score": 36,
+                    "governance_score": 28,
                     "total": 88
                 }, {
                     "date": "q3-2021",
                     "esg_id": 505552,
-                    "environment_score": 27,
+                    "environment_score": 25,
                     "social_score": 25,
-                    "governance_score": 36,
+                    "governance_score": 25,
                     "total": 88
                 }, {
                     "date": "q2-2021",
                     "esg_id": 66355,
-                    "environment_score": 27,
+                    "environment_score": 22,
                     "social_score": 25,
-                    "governance_score": 36,
+                    "governance_score": 28,
                     "total": 88
                 }, {
                     "date": "q1-2021",
                     "esg_id": 97536,
                     "environment_score": 27,
-                    "social_score": 25,
-                    "governance_score": 36,
+                    "social_score": 27,
+                    "governance_score": 30,
                     "total": 88
                 }, {
                     "date": "q4-2020",
                     "esg_id": 717889,
                     "environment_score": 27,
                     "social_score": 25,
-                    "governance_score": 36,
+                    "governance_score": 34,
                     "total": 88
                 }, {
                     "date": "q3-2020",
                     "esg_id": 711807,
-                    "environment_score": 27,
-                    "social_score": 25,
+                    "environment_score": 30,
+                    "social_score": 23,
                     "governance_score": 36,
                     "total": 88
                 }, {
@@ -1034,20 +1034,20 @@
                     "date": "q4-2022",
                     "esg_id": 977548,
                     "environment_score": 36,
-                    "social_score": 15,
-                    "governance_score": 22,
+                    "social_score": 20,
+                    "governance_score": 28,
                     "total": 73
                 }, {
                     "date": "q3-2022",
                     "esg_id": 201471,
                     "environment_score": 36,
-                    "social_score": 15,
+                    "social_score": 19,
                     "governance_score": 22,
                     "total": 73
                 }, {
                     "date": "q2-2022",
                     "esg_id": 112154,
-                    "environment_score": 36,
+                    "environment_score": 37,
                     "social_score": 15,
                     "governance_score": 22,
                     "total": 73
@@ -1055,7 +1055,7 @@
                     "date": "q1-2022",
                     "esg_id": 629944,
                     "environment_score": 36,
-                    "social_score": 15,
+                    "social_score": 16,
                     "governance_score": 22,
                     "total": 73
                 }, {
@@ -1063,12 +1063,12 @@
                     "esg_id": 948794,
                     "environment_score": 36,
                     "social_score": 15,
-                    "governance_score": 22,
+                    "governance_score": 23,
                     "total": 73
                 }, {
                     "date": "q3-2021",
                     "esg_id": 335964,
-                    "environment_score": 36,
+                    "environment_score": 34,
                     "social_score": 15,
                     "governance_score": 22,
                     "total": 73
@@ -1077,21 +1077,21 @@
                     "esg_id": 644465,
                     "environment_score": 36,
                     "social_score": 15,
-                    "governance_score": 22,
+                    "governance_score": 27,
                     "total": 73
                 }, {
                     "date": "q1-2021",
                     "esg_id": 792500,
                     "environment_score": 36,
-                    "social_score": 15,
+                    "social_score": 18,
                     "governance_score": 22,
                     "total": 73
                 }, {
                     "date": "q4-2020",
                     "esg_id": 460994,
-                    "environment_score": 36,
+                    "environment_score": 32,
                     "social_score": 15,
-                    "governance_score": 22,
+                    "governance_score": 24,
                     "total": 73
                 }, {
                     "date": "q3-2020",
@@ -1105,13 +1105,13 @@
                     "esg_id": 881665,
                     "environment_score": 36,
                     "social_score": 15,
-                    "governance_score": 22,
+                    "governance_score": 25,
                     "total": 73
                 }, {
                     "date": "q1-2020",
                     "esg_id": 457060,
-                    "environment_score": 36,
-                    "social_score": 15,
+                    "environment_score": 37,
+                    "social_score": 16,
                     "governance_score": 22,
                     "total": 73
                 }]

@@ -72,7 +72,7 @@ export default function PredictionLineChart({JsonData, viewType}) {
       <>
       <MixedChart
         icon={{ color: "info", component: "leaderboard" }}
-        title="History of ESG"
+        title="Prediction for the next year"
         description="Insights are done quarterly"
         chart={{
             

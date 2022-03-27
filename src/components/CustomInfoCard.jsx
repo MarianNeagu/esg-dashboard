@@ -62,7 +62,7 @@ export default function CustomInfoCard({letter, JsonData, viewType}) {
                 color={letter === "S" ? "error" : letter === "E" ? "info" : "dark"}
                 icon={<div>{letter}</div>}
                 title={extractScore(letter, JsonData, viewType).toString()}
-                description={returnProcentual(letter, JsonData, viewType).toString() + " %"}
+                description={returnProcentual(letter, JsonData, viewType).toString().substring(0,5) + "% compared to last year"}
                 value={letter === "E" ? "Environment" : letter === "S" ? "Social" : "Governance"}
             />
         );

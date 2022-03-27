@@ -65,6 +65,8 @@ import CustomBarChart from "components/CustomBarChart";
 import CustomInfoCard from "components/CustomInfoCard";
 import esg_data from "Data/esg_data";
 import PredictionLineChart from "components/PredictionLineChart";
+import InvestorInfoCard from "components/InvestorInfoCard";
+import InvestorsInfoCard2 from "components/InvestorsInfoCard2";
 
 
 const GridTemplateArea = styled.div `
@@ -73,7 +75,6 @@ const GridTemplateArea = styled.div `
             "header header header"
             "left-side middle right-side"
             "left-side-middle left-side-middle right-side-middle"
-            "footer footer footer"
             ;
 
     grid-template-columns: 1fr 1fr 1fr;
@@ -97,6 +98,7 @@ const Middle = styled.div`
   display: grid;  
   grid-area: middle;
 `
+
 
 const Header = styled.div`
   display: grid;  
@@ -127,86 +129,10 @@ export default function App() {
     whiteSidenav,
     darkMode,
   } = controller;
-  const [onMouseEnter, setOnMouseEnter] = useState(false);
   const [rtlCache, setRtlCache] = useState(null);
-  const { pathname } = useLocation();
+  
 
-  // Cache for the rtl
-  useMemo(() => {
-    const cacheRtl = createCache({
-      key: "rtl",
-      stylisPlugins: [rtlPlugin],
-    });
 
-    setRtlCache(cacheRtl);
-  }, []);
-
-  // Open sidenav when mouse enter on mini sidenav
-  const handleOnMouseEnter = () => {
-    if (miniSidenav && !onMouseEnter) {
-      setMiniSidenav(dispatch, false);
-      setOnMouseEnter(true);
-    }
-  };
-
-  // Close sidenav when mouse leave mini sidenav
-  const handleOnMouseLeave = () => {
-    if (onMouseEnter) {
-      setMiniSidenav(dispatch, true);
-      setOnMouseEnter(false);
-    }
-  };
-
-  // Change the openConfigurator state
-  const handleConfiguratorOpen = () => setOpenConfigurator(dispatch, !openConfigurator);
-
-  // Setting the dir attribute for the body element
-  useEffect(() => {
-    document.body.setAttribute("dir", direction);
-  }, [direction]);
-
-  // Setting page scroll to 0 when changing the route
-  useEffect(() => {
-    document.documentElement.scrollTop = 0;
-    document.scrollingElement.scrollTop = 0;
-  }, [pathname]);
-
-  const getRoutes = (allRoutes) =>
-    allRoutes.map((route) => {
-      if (route.collapse) {
-        return getRoutes(route.collapse);
-      }
-
-      if (route.route) {
-        return <Route exact path={route.route} element={route.component} key={route.key} />;
-      }
-
-      return null;
-    });
-
-  const configsButton = (
-    <MDBox
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      width="3.25rem"
-      height="3.25rem"
-      bgColor="white"
-      shadow="sm"
-      borderRadius="50%"
-      position="fixed"
-      right="2rem"
-      bottom="2rem"
-      zIndex={99}
-      color="dark"
-      sx={{ cursor: "pointer" }}
-      onClick={handleConfiguratorOpen}
-    >
-      <Icon fontSize="small" color="inherit">
-        settings
-      </Icon>
-    </MDBox>
-  );
 
   const [viewType, setViewType] = useState({
     industry: "Automotive",
@@ -260,18 +186,20 @@ export default function App() {
               <CustomBarChart JsonData = {esg_data} viewType={viewType}/>
             </RightSideMiddle>
           </GridTemplateArea>
+
           :
           
             <GridTemplateArea>
-            <Header>
-            <CustomNavbar viewTypeHandler = {viewTypeHandler} viewType = {viewType} JsonData={esg_data}/>
+              <Header>
+                <CustomNavbar viewTypeHandler = {viewTypeHandler} viewType = {viewType} JsonData={esg_data}/>
             </Header>
-            <LeftSideMiddle>
-            <PredictionLineChart JsonData = {esg_data} viewType={viewType}/>
+
+          <LeftSideMiddle>
+          <PredictionLineChart JsonData = {esg_data} viewType={viewType}/>
           </LeftSideMiddle>
-  
           <RightSideMiddle>
-            
+            {/* <InvestorInfoCard viewType={viewType} /> */}
+            <InvestorsInfoCard2 viewType={viewType} />
           </RightSideMiddle>
           </GridTemplateArea>
           }
